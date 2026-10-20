@@ -1,0 +1,7 @@
+2026-10-12 09:00:01 INFO Application started
+2026-10-12 09:00:03 INFO User logged in
+2026-10-12 09:00:05 WARNING Disk space running low
+2026-10-12 09:00:08 ERROR Database connection failed
+2026-10-12 09:00:09 INFO Retrying database connection
+2026-10-12 09:00:12 ERROR Database connection failed
+2026-10-12 09:00:15 INFO Application stopped
