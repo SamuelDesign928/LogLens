@@ -20,7 +20,7 @@ def parse_line(line):
         raise ValueError("Log entry has missing fields")
 
     # Checks severity level
-    if parts[2] not in ("ERROR", "INFO", "WARNING"):
+    if parts[2] not in ("DEBUG", "NOTICE", "CRITICAL", "ALERT", "EMERGANCY", "ERROR", "INFO", "WARNING"):
         raise ValueError("Invalid severity level")
 
     # Validate timestamp and gets message
@@ -57,12 +57,6 @@ def process_file(path):
     return valid, malformed
 
 
-
-if __name__ == "__main__":
-    file = Path("src/loglens/sample.log")
-    valid , malformed = process_file(file); print(f"{valid}\n{malformed}")
-    valid_count = len(valid); print(valid_count)
-    malformed_count = len(malformed); print(malformed_count)
 
 """
 test_lines = [
